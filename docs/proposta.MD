@@ -2,285 +2,130 @@
 
 Este documento deve ser preenchido pelo grupo na Semana 1 do projeto.
 
-A proposta deve apresentar uma ideia simples, clara e viável para ser desenvolvida com Python e Pygame dentro do prazo disponível.
-
 ## 1. Nome provisório do jogo
 
-Escreva aqui o nome provisório do jogo.
-
-Exemplo:
-
-> Corrida dos Obstáculos
+> Alien Escape
 
 ## 2. Integrantes do grupo
 
-Liste os integrantes do grupo.
-
-- Nome 1:
-- Nome 2:
-- Nome 3:
-- Nome 4:
+- Nome 1: Matheus Henrique
+- Nome 2: Diego Ribeiro
+- Nome 3: Eduardo
 
 ## 3. Tipo de jogo
 
-Indique o tipo de jogo que será desenvolvido.
-
-Exemplos:
-
-- jogo de desviar de obstáculos;
-- jogo de coleta de itens;
-- labirinto simples;
-- jogo de perguntas e respostas;
-- jogo de memória;
-- Pong;
-- Snake;
-- Breakout;
-- nave desviando de meteoros;
-- corrida simples com obstáculos;
-- jogo de clique rápido;
-- jogo de sobrevivência simples.
-
 Tipo escolhido pelo grupo:
 
-> Escreva aqui.
+> Jogo de sobrevivência simples e desvio de obstáculos (runner infinito).
 
 ## 4. Descrição geral do jogo
 
-Explique, em poucas linhas, como o jogo funcionará.
-
-Procure responder:
-
-- O que aparece na tela?
-- O que o jogador controla?
-- O que o jogador precisa fazer?
-- Quais desafios aparecem durante a partida?
-
 Descrição:
 
-> Escreva aqui.
+> O jogador controla um militar que corre automaticamente por um cenário. Durante a partida, aliens aparecem no chão e OVNIs aparecem no céu. O jogador deve pular ou agachar para evitar os obstáculos e sobreviver o maior tempo possível. A dificuldade aumenta gradativamente conforme a partida avança.
 
 ## 5. Objetivo do jogador
 
-Explique qual é o objetivo principal do jogador.
-
-Exemplos:
-
-- coletar o maior número possível de itens;
-- sobreviver pelo maior tempo possível;
-- chegar até o final do labirinto;
-- acertar alvos;
-- responder perguntas corretamente;
-- evitar obstáculos;
-- quebrar todos os blocos.
-
 Objetivo:
 
-> Escreva aqui.
+> Sobreviver o maior tempo possível desviando dos aliens e OVNIs, acumulando a maior pontuação possível.
 
 ## 6. Regras principais
 
-Liste as principais regras do jogo.
-
-Exemplo:
-
-- O jogador começa com 3 vidas.
-- Cada moeda coletada vale 10 pontos.
-- Cada colisão com obstáculo remove 1 vida.
-- A partida termina quando as vidas chegam a zero.
-- O jogador vence se alcançar 100 pontos.
-
 Regras do grupo:
 
-- Regra 1:
-- Regra 2:
-- Regra 3:
-- Regra 4:
-- Regra 5:
+- O militar corre automaticamente durante toda a partida.
+- Aliens aparecem no chão e devem ser evitados com pulos.
+- OVNIs aparecem no céu e devem ser evitados ao se agachar.
+- A pontuação aumenta conforme o tempo de sobrevivência.
+- A partida termina ao colidir com qualquer obstáculo.
 
 ## 7. Condição de vitória
 
-Explique como o jogador vence ou conclui o jogo.
-
-Exemplos:
-
-- atingir determinada pontuação;
-- chegar ao final da fase;
-- sobreviver até o tempo acabar;
-- responder uma quantidade mínima de perguntas;
-- quebrar todos os blocos.
-
 Condição de vitória:
 
-> Escreva aqui.
+> Como o jogo é infinito, não há uma vitória final. O objetivo é alcançar a maior pontuação possível e superar o recorde.
 
 ## 8. Condição de derrota ou encerramento
 
-Explique como o jogador perde ou quando a partida termina.
-
-Exemplos:
-
-- perder todas as vidas;
-- acabar o tempo;
-- colidir com determinado obstáculo;
-- errar muitas perguntas;
-- deixar a bola cair, no caso de Breakout ou Pong.
-
 Condição de derrota ou encerramento:
 
-> Escreva aqui.
+> O jogo termina quando o jogador colide com um alien ou um OVNI.
 
 ## 9. Elementos previstos no jogo
 
-Descreva os principais elementos que farão parte do jogo.
-
-## Jogador ou elemento principal
-
-Exemplo:
-
-> Um personagem controlado pelas setas do teclado.
+### Jogador ou elemento principal
 
 Descrição:
 
-> Escreva aqui.
+> Um militar controlado pelo jogador, capaz de pular e agachar para evitar obstáculos.
 
-## Obstáculos, inimigos ou desafios
-
-Exemplo:
-
-> Obstáculos aparecem em posições aleatórias e devem ser evitados.
+### Obstáculos, inimigos ou desafios
 
 Descrição:
 
-> Escreva aqui.
+> Aliens terrestres que aparecem no chão e OVNIs que aparecem voando pelo céu.
 
-## Itens, alvos ou objetos de interação
-
-Exemplo:
-
-> Moedas aparecem na tela e aumentam a pontuação quando coletadas.
+### Itens, alvos ou objetos de interação
 
 Descrição:
 
-> Escreva aqui.
+> Não haverá itens coletáveis na versão inicial. O foco será a sobrevivência e a pontuação baseada no tempo.
 
-## Pontuação, vidas, tempo ou progresso
-
-Exemplo:
-
-> O jogador começa com 3 vidas e ganha 10 pontos por item coletado.
+### Pontuação, vidas, tempo ou progresso
 
 Descrição:
 
-> Escreva aqui.
+> A pontuação aumenta conforme o tempo de sobrevivência. O jogador possui apenas uma vida e perde ao colidir com um obstáculo.
 
 ## 10. Controles previstos
 
-Informe os comandos que serão utilizados pelo jogador.
-
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
-- ESC: sair do jogo
-
 Controles do grupo:
 
-- Tecla/comando:
-- Tecla/comando:
-- Tecla/comando:
+- Espaço: pular.
+- Seta para baixo (↓): agachar.
+- ENTER: reiniciar a partida.
 
 ## 11. Organização inicial do código
 
-Explique como o grupo pretende organizar o código.
-
-Exemplo:
-
-- `main.py`: inicia o jogo;
-- `src/jogo.py`: contém o loop principal;
-- `src/config.py`: guarda configurações como tamanho da tela e cores;
-- `src/funcoes.py`: contém funções auxiliares;
-- `src/dados.py`: contém funções de leitura e escrita de arquivos.
-
 Organização planejada:
 
-> Escreva aqui.
-
+- `main.py`: inicia o jogo.
+- `src/jogo.py`: contém o loop principal.
+- `src/jogador.py`: controla o militar.
+- `src/obstaculos.py`: controla aliens e OVNIs.
+- `src/config.py`: configurações gerais do jogo.
+- `src/dados.py`: armazenamento de recordes.
 
 ## 12. Recursos externos previstos
 
-Informe se o grupo pretende utilizar imagens, sons, fontes, tutoriais ou códigos externos.
-
-Exemplo:
-
-- imagens obtidas de banco gratuito;
-- sons gratuitos;
-- tutorial usado apenas como referência;
-- fonte personalizada.
-
 Recursos previstos:
 
-> Escreva aqui.
-
-Caso não pretenda utilizar recursos externos, escreva:
-
-> Não pretendemos utilizar recursos externos.
+- Imagens gratuitas para o militar, aliens e OVNIs.
+- Sons gratuitos para pulo e colisão.
+- Fonte gratuita para exibição da pontuação.
+- Tutoriais sobre Pygame utilizados apenas como referência.
 
 ## 13. Principais dificuldades esperadas
 
-Liste as dificuldades que o grupo acredita que poderá enfrentar.
-
-Exemplos:
-
-- movimentação do jogador;
-- colisão entre objetos;
-- controle de tempo;
-- criação do ranking;
-- organização do código;
-- uso do GitHub;
-- testes;
-- exibição de textos na tela.
-
 Dificuldades previstas:
 
-- Dificuldade 1:
-- Dificuldade 2:
-- Dificuldade 3:
+- Implementação da colisão entre jogador e obstáculos.
+- Controle do pulo e da ação de agachar.
+- Aumento progressivo da dificuldade e velocidade do jogo.
 
 ## 14. Escopo mínimo para a entrega final
 
-Descreva qual será a versão mínima aceitável do jogo.
-
-Esta seção é importante para evitar que o grupo escolha uma ideia grande demais.
-
-Exemplo:
-
-> A versão mínima do jogo terá um personagem controlado pelo teclado, obstáculos aparecendo na tela, sistema de vidas, sistema de pontuação e tela de fim de jogo.
-
 Escopo mínimo:
 
-> Escreva aqui.
+> A versão mínima do jogo terá um militar controlado pelo teclado, aliens e OVNIs surgindo como obstáculos, sistema de pontuação baseado no tempo, detecção de colisões e tela de fim de jogo.
 
 ## 15. Possíveis melhorias, caso haja tempo
 
-Liste funcionalidades extras que o grupo poderá implementar se conseguir concluir o escopo mínimo.
-
-Exemplos:
-
-- tela inicial;
-- sons;
-- fases;
-- aumento de dificuldade;
-- ranking;
-- animações;
-- novos tipos de obstáculos;
-- diferentes personagens;
-- menu de pausa.
-
 Melhorias possíveis:
 
-- Melhoria 1:
-- Melhoria 2:
-- Melhoria 3:
+- Sistema de ranking e recordes.
+- Efeitos sonoros e músicas.
+- Animações para o personagem e obstáculos.
+- Tela inicial e menu de pausa.
+- Diferentes tipos de aliens e OVNIs.
